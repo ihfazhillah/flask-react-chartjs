@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  flaskapp:
+    build:
+      context: .
+      dockerfile: FlaskDockerfile
+    environment:
+      FLASK_APP: flaskapp:app
+      FLASK_DEBUG: 0
+      DATABASE_URL: 'mysql+pymysql://test:test@db:3306/test'
+
+    command: /start
+    depends_on:
+      - db
+    volumes:
+      - "./:/app"
+    ports:
+      - "5000:5000"
+
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
+      - MYSQL_ROOT_PASSWORD=test
+    volumes:
+      - my-db:/var/lib/mysql
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ReactDockerfile
+
+    command: npm run start
+    volumes:
+      - "./:/app"
+    ports:
+      - "3000:3000"
+
+volumes:
+  my-db:

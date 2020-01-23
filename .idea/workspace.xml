@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FlaskDockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReactDockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskapp/src.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/src.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.virtualenvs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -48,8 +54,50 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.flaskapp: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="flaskapp" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -62,6 +110,13 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.flaskapp: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -86,7 +141,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579764306171</updated>
       <workItem from="1579764309775" duration="8265000" />
-      <workItem from="1579773555138" duration="2794000" />
+      <workItem from="1579773555138" duration="5405000" />
+      <workItem from="1579782937817" duration="5770000" />
     </task>
     <task id="LOCAL-00001" summary="frontend works">
       <created>1579773156319</created>
@@ -102,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579775872372</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Connect Flask app with reactapp">
+      <created>1579776622284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579776622284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,44 +174,53 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="frontend works" />
     <MESSAGE value="Add Flask app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Flask app" />
+    <MESSAGE value="Connect Flask app with reactapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connect Flask app with reactapp" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="477" y="268" width="639" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579776709236">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="477" y="268" width="639" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1600.873@0.27.1600.873" timestamp="1579776709236" />
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579773999790">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1600.873@0.27.1600.873" timestamp="1579773999790" />
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579775871301">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579776620914">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579775871301" />
-    <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579776157988">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579776620914" />
+    <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579779645781">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579776157988" />
-    <state width="1554" height="220" key="GridCell.Tab.0.center" timestamp="1579776157987">
+    <state width="1554" height="220" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579779645781" />
+    <state width="1554" height="220" key="GridCell.Tab.0.center" timestamp="1579779645780">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579776157987" />
-    <state width="1554" height="220" key="GridCell.Tab.0.left" timestamp="1579776157987">
+    <state width="1554" height="220" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579779645780" />
+    <state width="1554" height="220" key="GridCell.Tab.0.left" timestamp="1579779645779">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579776157987" />
-    <state width="1554" height="220" key="GridCell.Tab.0.right" timestamp="1579776157988">
+    <state width="1554" height="220" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579779645779" />
+    <state width="1554" height="220" key="GridCell.Tab.0.right" timestamp="1579779645780">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579776157988" />
+    <state width="1554" height="220" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579779645780" />
     <state x="289" y="98" key="SettingsEditor" timestamp="1579773493784">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="289" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1579773493784" />
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1579773578438">
+    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1579786176374">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1579773578438" />
-    <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579775423264">
+    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1579786176374" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1579783003437">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1600.873@0.27.1600.873" timestamp="1579775423264" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1579783003437" />
+    <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579788829780">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1600.873@0.27.1600.873" timestamp="1579788829780" />
   </component>
 </project>

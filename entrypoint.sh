@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+flask db upgrade
+flask run --host=0.0.0.0
+

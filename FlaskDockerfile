@@ -1,0 +1,14 @@
+FROM python:3.6
+
+RUN mkdir /app
+WORKDIR /app
+COPY requirements.txt /app/requirements.txt
+RUN pip install -r /app/requirements.txt
+
+ENV FLASK_APP=flaskapp:app
+
+#COPY entrypoint.sh /app/entrypoint.sh
+#RUN chmod +x /app/entrypoint.sh
+#ENTRYPOINT ["/app/entrypoint.sh"]
+COPY start.sh /start
+RUN chmod +x /start
