@@ -1,0 +1,5 @@
+flask
+faker
+flask-sqlalchemy
+sqlalchemy
+flask-migrate
