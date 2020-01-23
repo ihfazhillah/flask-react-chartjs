@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="" />
+    <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WmoocnCAJwMyABIPBVNl9Qbu3m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,9 +37,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/.virtualenvs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.fnm/node-versions/v12.12.0/installation/bin/node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -26,6 +53,21 @@
         <option name="mySdkHome" value="$USER_HOME$/bin/python-autoenv" />
       </console-settings>
     </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -49,8 +91,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579764306171</updated>
-      <workItem from="1579764309775" duration="288000" />
+      <workItem from="1579764309775" duration="7776000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579765800677">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="220" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579765800677" />
+    <state width="1554" height="220" key="GridCell.Tab.0.center" timestamp="1579765800675">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="220" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579765800675" />
+    <state width="1554" height="220" key="GridCell.Tab.0.left" timestamp="1579765800675">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="220" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579765800675" />
+    <state width="1554" height="220" key="GridCell.Tab.0.right" timestamp="1579765800676">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="220" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579765800676" />
+    <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579771964456">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1600.873@0.27.1600.873" timestamp="1579771964456" />
   </component>
 </project>
