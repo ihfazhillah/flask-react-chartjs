@@ -3,3 +3,4 @@ faker
 flask-sqlalchemy
 sqlalchemy
 flask-migrate
+flask-cors

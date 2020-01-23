@@ -1,37 +1,22 @@
+import axios from "axios";
+
+const baseUrl = "http://localhost:5000/"
+
+
 class Client {
   getAllData() {
-    return new Promise(
-      (resolve, reject) => {
-        return resolve(
-          [
-            {
-              title: "January Sales", items: [
-                {name: "shoe", count: 40},
-                {name: "hat", count: 90},
-                {name: "phone", count: 35},
-                {name: "laptop", count: 10}
-              ]
-            }
-          ]
-        )
+    return axios.get(`${baseUrl}sales/`).then(
+      response => {
+        return response.data
       }
     )
 
   }
 
   addData(data) {
-    return new Promise(
-      (resolve, reject) => {
-        return resolve(
-            {
-              title: "January Sales", items: [
-                {name: "shoe", count: 40},
-                {name: "hat", count: 90},
-                {name: "phone", count: 35},
-                {name: "laptop", count: 10}
-              ]
-            }
-        )
+    return axios.post(`${baseUrl}sales/`).then(
+      response => {
+        return response.data
       }
     )
   }

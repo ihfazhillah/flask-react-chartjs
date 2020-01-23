@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskapp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskapp/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskapp/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskapp/src/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskapp/src/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-chart-flask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-chart-flask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579764306171</updated>
       <workItem from="1579764309775" duration="8265000" />
-      <workItem from="1579773555138" duration="2020000" />
+      <workItem from="1579773555138" duration="2794000" />
     </task>
     <task id="LOCAL-00001" summary="frontend works">
       <created>1579773156319</created>
@@ -104,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579773156319</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Flask app">
+      <created>1579775872372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579775872372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,33 +110,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="frontend works" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend works" />
+    <MESSAGE value="Add Flask app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Flask app" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579773999790">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1600.873@0.27.1600.873" timestamp="1579773999790" />
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579773155072">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579775871301">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579773155072" />
-    <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579773500817">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579775871301" />
+    <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579776157988">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579773500817" />
-    <state width="1554" height="220" key="GridCell.Tab.0.center" timestamp="1579773500817">
+    <state width="1554" height="220" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579776157988" />
+    <state width="1554" height="220" key="GridCell.Tab.0.center" timestamp="1579776157987">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579773500817" />
-    <state width="1554" height="220" key="GridCell.Tab.0.left" timestamp="1579773500816">
+    <state width="1554" height="220" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579776157987" />
+    <state width="1554" height="220" key="GridCell.Tab.0.left" timestamp="1579776157987">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579773500816" />
-    <state width="1554" height="220" key="GridCell.Tab.0.right" timestamp="1579773500817">
+    <state width="1554" height="220" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579776157987" />
+    <state width="1554" height="220" key="GridCell.Tab.0.right" timestamp="1579776157988">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579773500817" />
+    <state width="1554" height="220" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579776157988" />
     <state x="289" y="98" key="SettingsEditor" timestamp="1579773493784">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
