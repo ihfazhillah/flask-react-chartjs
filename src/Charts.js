@@ -92,7 +92,7 @@ class Charts extends React.Component{
   render(){
     return <div className="mt-5">
       {!this.props.sales.data.length && <p className="text-danger">No data, please click the button above.</p>}
-      {this.props.sales.data.length &&
+      {this.props.sales.data.length > 0 &&
       <div>
         {this.props.sales.data.map((sale, index) => {
           return <div key={"chart" + index}>
