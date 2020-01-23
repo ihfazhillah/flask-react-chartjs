@@ -4,8 +4,6 @@
     <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskapp/src.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/src.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Charts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,8 @@
       <updated>1579764306171</updated>
       <workItem from="1579764309775" duration="8265000" />
       <workItem from="1579773555138" duration="5405000" />
-      <workItem from="1579782937817" duration="6010000" />
+      <workItem from="1579782937817" duration="6178000" />
+      <workItem from="1579820175551" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="frontend works">
       <created>1579773156319</created>
@@ -167,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579789562134</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix unused import">
+      <created>1579789657628</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579789657628</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +184,8 @@
     <MESSAGE value="Add Flask app" />
     <MESSAGE value="Connect Flask app with reactapp" />
     <MESSAGE value="Dockerize app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerize app" />
+    <MESSAGE value="Fix unused import" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix unused import" />
   </component>
   <component name="WindowStateProjectService">
     <state x="477" y="268" width="639" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579776709236">
@@ -189,10 +196,10 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1600.873@0.27.1600.873" timestamp="1579773999790" />
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579789560508">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579789656987">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579789560508" />
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579789656987" />
     <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579779645781">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -213,14 +220,14 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="289" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1579773493784" />
-    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1579786176374">
+    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1579789658738">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1579786176374" />
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1579783003437">
+    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1579789658738" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1579820176545">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1579783003437" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1579820176545" />
     <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579788829780">
       <screen x="0" y="27" width="1600" height="873" />
     </state>

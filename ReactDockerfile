@@ -2,6 +2,6 @@ FROM node:latest
 
 RUN mkdir /app
 WORKDIR /app
-COPY package.json /app/package.json
+COPY package.json yarn.lock /app/
 
 RUN yarn install
