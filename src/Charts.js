@@ -14,11 +14,18 @@ class OurChart extends React.Component{
   }
   componentDidUpdate(prevProps, prevState, snapshot) {
     console.log(prevProps.showOriginal, this.props.showOriginal)
+    this.chart.destroy()
+    this.pie.destroy()
     this.processCharts()
   }
 
   componentDidMount() {
     this.processCharts();
+  }
+
+  componentWillUnmount() {
+    this.barChart = null
+    this.pieChart = null
   }
 
   processCharts() {
