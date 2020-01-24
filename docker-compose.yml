@@ -35,7 +35,8 @@ services:
 
     command: npm run start
     volumes:
-      - "./:/app"
+      - "./src:/app/src"
+      - "./public:/app/public"
     ports:
       - "3000:3000"
 
