@@ -15,6 +15,8 @@ function sales(state = salesInitState, action){
     case 'getMultiplier':
       // the data from backend is list, we need first of it
       return {...state, multiplier: action.data[0]}
+    case 'toggleShowOriginal':
+      return {...state, showOriginal: !state.showOriginal}
     default:
       return state
   }

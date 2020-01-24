@@ -12,23 +12,17 @@ class OurChart extends React.Component{
     this.pieChart = React.createRef()
     this.theData = this.theData.bind(this)
   }
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log(prevProps.showOriginal, this.props.showOriginal)
+    this.processCharts()
+  }
+
   componentDidMount() {
+    this.processCharts();
+  }
 
-    let {showOriginal, multiplier} = this.props
-
-    // make sure that we have original value for each
-    let pieMultiplier = parseInt(multiplier.pie) || 1
-    let barMultiplier = parseInt(multiplier.bar) || 1
-
-    if (showOriginal){
-      var pieList = this.props.saleData.items.map(value => value.count)
-      var barList = this.props.saleData.items.map(value => value.count)
-    } else{
-      var pieList = this.props.saleData.items.map(value => value.count * pieMultiplier)
-      var barList = this.props.saleData.items.map(value => value.count * barMultiplier)
-    }
-
-
+  processCharts() {
+    var {pieList, barList} = this.processData();
     let labels = this.props.saleData.items.map(value => value.name)
     let pie = this.pieChart.current.getContext("2d")
     let {data: piedata, option: pieoptions} = this.theData(pieList, labels, this.props.saleData.title);
@@ -39,15 +33,30 @@ class OurChart extends React.Component{
     })
 
 
-
     let {data: bardata, option: baroption} = this.theData(barList, labels, this.props.saleData.title);
-    console.log(bardata, baroption)
     let ctx = this.barChart.current.getContext("2d")
     this.chart = new Chart(ctx, {
       type: 'bar',
       data: bardata,
       options: baroption
     })
+  }
+
+  processData() {
+    let {showOriginal, multiplier} = this.props
+
+    // make sure that we have original value for each
+    let pieMultiplier = parseInt(multiplier.pie) || 1
+    let barMultiplier = parseInt(multiplier.bar) || 1
+
+    if (showOriginal) {
+      var pieList = this.props.saleData.items.map(value => value.count)
+      var barList = this.props.saleData.items.map(value => value.count)
+    } else {
+      var pieList = this.props.saleData.items.map(value => value.count * pieMultiplier)
+      var barList = this.props.saleData.items.map(value => value.count * barMultiplier)
+    }
+    return {pieList, barList};
   }
 
   theData(list, labels, title) {
@@ -95,16 +104,22 @@ class OurChart extends React.Component{
     return {data, option};
   }
 
+
+  renderDrawingCanvas(barChart, pieChart){
+    return <div className="row p-5">
+      <div className="col-md-6">
+        <canvas ref={barChart} width="400" height="400"></canvas>
+      </div>
+      <div className="col-md-6">
+        <canvas ref={pieChart} width="400" height="400"></canvas>
+      </div>
+    </div>
+
+  }
+
   render(){
     return <div className="container mx-auto">
-      <div className="row p-5">
-        <div className="col-md-6">
-          <canvas ref={this.barChart} width="400" height="400"></canvas>
-        </div>
-        <div className="col-md-6">
-          <canvas ref={this.pieChart} width="400" height="400"></canvas>
-        </div>
-      </div>
+      {this.renderDrawingCanvas(this.barChart, this.pieChart)}
     </div>
   }
 }

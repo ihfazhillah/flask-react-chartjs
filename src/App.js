@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {connect} from "react-redux";
 import classNames from "classnames";
 import Charts from "./Charts";
-import {addData} from "./actions";
+import {addData, toggleShowOriginal} from "./actions";
 
 
 function App(props) {
@@ -20,11 +20,12 @@ function App(props) {
       <h3>A Simple Chart App</h3>
       <p className="lead">Click button below to add New Chart</p>
       <button className={btnClasses} onClick={() => props.addData()}>Add Chart</button>
+      <button className="btn btn-outline-info" onClick={() => props.toggleShowOriginal()}>Display {props.sales.showOriginal && "Multiplied" || "Original"}</button>
       <Charts/>
     </div>
   );
 }
 
-let withRedux = connect((state)=> ({sales: state.sales}), {addData})(App)
+let withRedux = connect((state)=> ({sales: state.sales}), {addData, toggleShowOriginal})(App)
 
 export default withRedux;

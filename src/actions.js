@@ -28,5 +28,8 @@ export function addData(){
  }
 }
 
+export function toggleShowOriginal(){
+ return {type: "toggleShowOriginal"}
+}
 
 
