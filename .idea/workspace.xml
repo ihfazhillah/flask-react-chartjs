@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskapp/multiplier.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskapp/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskapp/src.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/src.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskapp/src/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/src/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +59,11 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.Flask">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
+    <configuration name="Flask (flaskapp:app)" type="Python.FlaskServer" nameIsGenerated="true">
       <option name="application" value="app" />
       <option name="flaskDebug" value="true" />
       <module name="react-chart-flask" />
@@ -71,7 +72,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/react-chart-flask/bin/python" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -137,9 +138,9 @@
       <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.flaskapp: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-      <item itemvalue="Flask server.Flask" />
       <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="npm.npm start" />
+      <item itemvalue="Flask server.Flask (flaskapp:app)" />
     </list>
     <recent_temporary>
       <list>
@@ -177,7 +178,7 @@
       <workItem from="1579820175551" duration="609000" />
       <workItem from="1579822665307" duration="2864000" />
       <workItem from="1579849730312" duration="93000" />
-      <workItem from="1579849897898" duration="386000" />
+      <workItem from="1579849897898" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="frontend works">
       <created>1579773156319</created>
@@ -228,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579824285396</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add multiplier csv">
+      <created>1579850491368</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1579850491368</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +250,8 @@
     <MESSAGE value="Fix unused import" />
     <MESSAGE value="Update the dockerfile for react" />
     <MESSAGE value="Update the volumes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update the volumes" />
+    <MESSAGE value="add multiplier csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="add multiplier csv" />
   </component>
   <component name="WindowStateProjectService">
     <state x="258" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579850284417">
@@ -261,26 +270,74 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1600.873@0.27.1600.873" timestamp="1579773999790" />
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579824283841">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579850490589">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579824283841" />
-    <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579779645781">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579850490589" />
+    <state width="1554" height="272" key="GridCell.Tab.0.bottom" timestamp="1579851983636">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579779645781" />
-    <state width="1554" height="220" key="GridCell.Tab.0.center" timestamp="1579779645780">
+    <state width="1554" height="272" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579851983636" />
+    <state width="1554" height="272" key="GridCell.Tab.0.center" timestamp="1579851983634">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579779645780" />
-    <state width="1554" height="220" key="GridCell.Tab.0.left" timestamp="1579779645779">
+    <state width="1554" height="272" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1579851983634" />
+    <state width="1554" height="272" key="GridCell.Tab.0.left" timestamp="1579851983633">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579779645779" />
-    <state width="1554" height="220" key="GridCell.Tab.0.right" timestamp="1579779645780">
+    <state width="1554" height="272" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1579851983633" />
+    <state width="1554" height="272" key="GridCell.Tab.0.right" timestamp="1579851983635">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state width="1554" height="220" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579779645780" />
+    <state width="1554" height="272" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1579851983635" />
+    <state width="1554" height="272" key="GridCell.Tab.1.bottom" timestamp="1579851983638">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.1.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579851983638" />
+    <state width="1554" height="272" key="GridCell.Tab.1.center" timestamp="1579851983637">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.1.center/0.27.1600.873@0.27.1600.873" timestamp="1579851983637" />
+    <state width="1554" height="272" key="GridCell.Tab.1.left" timestamp="1579851983636">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.1.left/0.27.1600.873@0.27.1600.873" timestamp="1579851983636" />
+    <state width="1554" height="272" key="GridCell.Tab.1.right" timestamp="1579851983637">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1579851983637" />
+    <state width="1554" height="272" key="GridCell.Tab.2.bottom" timestamp="1579851983640">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.2.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579851983640" />
+    <state width="1554" height="272" key="GridCell.Tab.2.center" timestamp="1579851983639">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.2.center/0.27.1600.873@0.27.1600.873" timestamp="1579851983639" />
+    <state width="1554" height="272" key="GridCell.Tab.2.left" timestamp="1579851983638">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.2.left/0.27.1600.873@0.27.1600.873" timestamp="1579851983638" />
+    <state width="1554" height="272" key="GridCell.Tab.2.right" timestamp="1579851983640">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.2.right/0.27.1600.873@0.27.1600.873" timestamp="1579851983640" />
+    <state width="1554" height="272" key="GridCell.Tab.3.bottom" timestamp="1579851983642">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.3.bottom/0.27.1600.873@0.27.1600.873" timestamp="1579851983642" />
+    <state width="1554" height="272" key="GridCell.Tab.3.center" timestamp="1579851983641">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.3.center/0.27.1600.873@0.27.1600.873" timestamp="1579851983641" />
+    <state width="1554" height="272" key="GridCell.Tab.3.left" timestamp="1579851983641">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.3.left/0.27.1600.873@0.27.1600.873" timestamp="1579851983641" />
+    <state width="1554" height="272" key="GridCell.Tab.3.right" timestamp="1579851983642">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state width="1554" height="272" key="GridCell.Tab.3.right/0.27.1600.873@0.27.1600.873" timestamp="1579851983642" />
     <state x="289" y="98" key="SettingsEditor" timestamp="1579773493784">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -301,10 +358,10 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="462" y="256" width="665" height="411" key="git4idea.merge.GitPullDialog/0.27.1600.873@0.27.1600.873" timestamp="1579849750959" />
-    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1579850331557">
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1579852703286">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1579850331557" />
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1579852703286" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/react_chart_flask$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1579850286194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

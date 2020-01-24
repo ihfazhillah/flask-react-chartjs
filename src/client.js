@@ -20,6 +20,12 @@ class Client {
       }
     )
   }
+
+  getMultiplier(){
+    return axios.get(`${baseUrl}multiplier/`).then(
+      response => response.data
+    )
+  }
 }
 
 export default Client

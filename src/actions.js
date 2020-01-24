@@ -10,6 +10,15 @@ export function getInitialData(){
  }
 }
 
+export function getMultiplierData(){
+ return (dispatch, getState) => {
+  new Client().getMultiplier().then(result => {
+   dispatch({type: 'getMultiplier', data: result})
+  })
+ }
+}
+
+
 export function addData(){
  return (dispatch, getState) => {
   dispatch({type: 'toggleProcessing'})
