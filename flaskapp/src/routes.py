@@ -1,4 +1,5 @@
 import json
+import csv
 
 from faker import Faker
 
@@ -28,3 +29,24 @@ def getData():
     db.session.commit()
 
     return month_sale.to_dict
+
+
+@app.route("/multiplier/")
+def multiplier():
+    """
+    View to get multiplier data from csv
+    the data contains multiplier for differents graph types
+
+    the current graph types is bar and pie, so the multiplier.csv should
+
+    ```
+    bar,pie
+    100,200
+    ```
+    :return: json response about multiplier data
+
+    Note: Because its from csv file, the data returned is list.
+    """
+    with open(app.config.get("MULTIPLIER_CSV")) as multiplier_file:
+        multiplier_data = csv.DictReader(multiplier_file)
+        return json.dumps([data for data in multiplier_data], indent=4)

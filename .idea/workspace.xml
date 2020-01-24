@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40c84321-59fd-4881-a5ac-0a571167b584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskapp/multiplier.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskapp/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskapp/src.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/src.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskapp/src/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapp/src/routes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +58,35 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Flask server.Flask">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
+      <option name="application" value="app" />
+      <option name="flaskDebug" value="true" />
+      <module name="react-chart-flask" />
+      <option name="target" value="flaskapp" />
+      <option name="targetType" value="PYTHON" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/react-chart-flask/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -103,6 +133,14 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.flaskapp: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Flask server.Flask" />
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
@@ -137,6 +175,9 @@
       <workItem from="1579773555138" duration="5405000" />
       <workItem from="1579782937817" duration="6178000" />
       <workItem from="1579820175551" duration="609000" />
+      <workItem from="1579822665307" duration="2864000" />
+      <workItem from="1579849730312" duration="93000" />
+      <workItem from="1579849897898" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="frontend works">
       <created>1579773156319</created>
@@ -173,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579789657628</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update the dockerfile for react">
+      <created>1579822879519</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579822879519</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update the volumes">
+      <created>1579824285396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579824285396</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,21 +240,31 @@
     <MESSAGE value="Connect Flask app with reactapp" />
     <MESSAGE value="Dockerize app" />
     <MESSAGE value="Fix unused import" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix unused import" />
+    <MESSAGE value="Update the dockerfile for react" />
+    <MESSAGE value="Update the volumes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the volumes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="258" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579850284417">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="258" y="121" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1600.873@0.27.1600.873" timestamp="1579850284417" />
     <state x="477" y="268" width="639" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579776709236">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="477" y="268" width="639" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1600.873@0.27.1600.873" timestamp="1579776709236" />
+    <state x="532" y="249" width="525" height="424" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579850248915">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="532" y="249" width="525" height="424" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1600.873@0.27.1600.873" timestamp="1579850248915" />
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579773999790">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="533" y="212" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1600.873@0.27.1600.873" timestamp="1579773999790" />
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579789656987">
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2" timestamp="1579824283841">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579789656987" />
+    <state x="365" y="55" width="860" height="812" key="CommitChangelistDialog2/0.27.1600.873@0.27.1600.873" timestamp="1579824283841" />
     <state width="1554" height="220" key="GridCell.Tab.0.bottom" timestamp="1579779645781">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
@@ -220,17 +285,28 @@
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="289" y="98" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1579773493784" />
-    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1579789658738">
+    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1579824287263">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1579789658738" />
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1579820176545">
+    <state x="395" y="199" width="800" height="524" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1579824287263" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1579849904184">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
-    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1579820176545" />
+    <state x="456" y="291" key="com.intellij.ide.util.TipDialog/0.27.1600.873@0.27.1600.873" timestamp="1579849904184" />
     <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579788829780">
       <screen x="0" y="27" width="1600" height="873" />
     </state>
     <state x="378" y="144" width="834" height="635" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1600.873@0.27.1600.873" timestamp="1579788829780" />
+    <state x="462" y="256" width="665" height="411" key="git4idea.merge.GitPullDialog" timestamp="1579849750959">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="462" y="256" width="665" height="411" key="git4idea.merge.GitPullDialog/0.27.1600.873@0.27.1600.873" timestamp="1579849750959" />
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup" timestamp="1579850331557">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="463" y="214" width="672" height="678" key="search.everywhere.popup/0.27.1600.873@0.27.1600.873" timestamp="1579850331557" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/react_chart_flask$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1579850286194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
